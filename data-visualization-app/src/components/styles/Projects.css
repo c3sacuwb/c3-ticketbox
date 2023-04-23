@@ -1,0 +1,44 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 2%;
+    padding: 4%;
+    background-color: #9bacc8;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2% 2% 0 0;
+    padding: 2%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3% 10%;
+  }
+  
+  .column {
+    flex: 0 1 calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+  }
+  
+  .column:hover .card {
+    transform: scale(1.05); /* add hover effect */
+  }
+  
+  .column:hover .btn-primary {
+    transform: translateY(-10%); /* move the button up on hover */
+  }
